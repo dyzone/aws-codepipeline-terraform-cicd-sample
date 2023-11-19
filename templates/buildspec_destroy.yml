@@ -23,6 +23,7 @@ phases:
   build:
     commands:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
+      - "terraform init"
       - "terraform destroy --auto-approve"
 
 artifacts:
