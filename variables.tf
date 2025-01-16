@@ -10,12 +10,12 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Name of the existing EC2 key pair"
-  default = "2023"
+  default = "down_key"
 }
 
 variable "s3_bucket_name" {
   description = "Name of the S3 bucket for remote state"
-  default = "tfdemo16112023"
+  default = "dyzone-tfstate"
 }
 
 variable "name" {
